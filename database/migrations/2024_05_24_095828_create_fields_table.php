@@ -4,6 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
+
 return new class extends Migration
 {
     /**
@@ -20,7 +21,7 @@ return new class extends Migration
             $table->string('tipo_manto', 100);
             $table->unsignedTinyInteger('illuminazione');//true=1 or false=0
             $table->string('colore_campo', 100);
-            $table->decimal('costo', 2,2);
+            $table->tinyInteger('costo');
             $table->string('image', 255);
             $table->timestamps();
         });
